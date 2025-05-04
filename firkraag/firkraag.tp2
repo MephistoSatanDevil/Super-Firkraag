@@ -16,7 +16,7 @@ ALWAYS
 	ACTION_DEFINE_ARRAY f#noconvert BEGIN END
 	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
 	ACTION_DEFINE_ARRAY f#reload BEGIN fsetup END
-
+	ACTION_DEFINE_ARRAY f#noconvert BEGIN install END
 	LAF HANDLE_CHARSETS
 		INT_VAR
 			infer_charsets = 1
@@ -44,7 +44,9 @@ LANGUAGE ~Deutsch (Uebersetzung von the BiG World Textpack German team)~
 LANGUAGE ~Polski (translation by SoM, part of CoB Clan)~
          ~polish~
 		 ~firkraag/lang/polish/fsetup.tra~
-
+LANGUAGE ~Simplified Chinese (translation by 魔术师)~
+         ~schinese~
+		 ~firkraag/lang/schinese/install.tra~
 
 /* ============================ *
  *  Super Firkraag Mod for BG2  *
